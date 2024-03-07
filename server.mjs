@@ -6,7 +6,7 @@ import cors from "cors";
 
 
 const app = express();
-const port = 3000;
+const port = 4050;
 
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -25,6 +25,8 @@ app.get("/web", async (req, res, next) => {
 
     const m = req.query.m;;
     console.log(m);
+
+    
 
 
     const media = {
